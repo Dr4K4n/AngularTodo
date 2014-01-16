@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="twimbeeTodo">
+    <head>
+        <meta charset="utf-8">
+        <title>Dr4K4n's TODO-App</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/app.css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <form class="navbar-form navbar-left" role="search">
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#/todo">Alle TODOs</a></li>
+                </ul>
+            </form>
+        </nav>
+
+        <div ng-view></div>
+        <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        -->
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="lib/angular-resource.js"></script>
+        <script src="lib/ui-bootstrap-tpls-0.10.0.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js"></script>
+    </body>
+</html>

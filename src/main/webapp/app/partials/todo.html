@@ -1,0 +1,30 @@
+<div class="well">
+    <div class="row">
+        <div class="col-lg-5">
+            <form ng-submit="addTodo(newTodo)">
+                <div class="input-group">
+                    <input class="form-control" type="text" ng-model="newTodo" placeholder="New ToDo" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" ng-click="addTodo(newTodo)" type="button">Add</button>
+                    </span>   
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="search" placeholder="Search">
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="todo in todos| filter:search">
+        {{ todo.text}} ({{ todo.id}}) 
+        <button ng-click="removeTodo(todo)" style="float: right">
+            <span class="glyphicon glyphicon-remove-circle"></span>
+        </button>
+    </li>
+</ul>
