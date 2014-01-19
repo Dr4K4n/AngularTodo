@@ -1,12 +1,5 @@
 {
-  "name": "angularjs-seed",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "devDependencies": {
-    "phantomjs" : "~1.9",
-    "karma" : "~0.10",
-    "karma-junit-reporter" : "~0.1",
-    "karma-jasmine" : "~0.1",
-    "karma-ng-scenario" : "~0.1"
-  }
+  "name": "AngularTodo",
+  "description": "simple Todo-Application with AngularJS, Bootstrap and JavaEE 7, JAX-RS 2.0, JPA",
+  "repository": "https://github.com/Dr4K4n/AngularTodo",
 }
